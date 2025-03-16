@@ -14,14 +14,3 @@ public class Torre {
         // Mover el disco más grande (n) del origen al destino
         System.out.println("Mover disco " + n + " de " + origen + " a " + destino);
 
-        // Mover los n-1 discos del poste auxiliar al poste destino
-        torreDeHanoi(n - 1, auxiliar, destino, origen);
-    }
-
-    public static void main(String[] args) {
-        int n = 3; // Número de discos
-
-        // Invocamos la función para mover los n discos del poste A al poste C usando el poste B como auxiliar
-        torreDeHanoi(n, 'A', 'C', 'B');
-    }
-}
